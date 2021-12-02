@@ -1,5 +1,31 @@
 // Time Complexity => O()
 // Space Complexity => O()
+
+/*
+  => brackets expressions first
+  => precedence of operators
+
+
+  result = ab+c-def-*g/+hij/*+
+
+  stack = +
+
+  1. if op bracken
+  push to stack
+
+  2. if close brack
+  pop till open and add it to result
+  then pop open brack
+
+  1 . prec >=
+  pop and add to result
+
+  2 prec < 
+  add to stack
+
+
+*/
+
 function solve(string) {
   let operators_precedence = {
     "+": 1,
